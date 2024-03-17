@@ -1,42 +1,60 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import LottieView from 'lottie-react-native'
+import Animated, { useAnimatedStyle, useSharedValue, withDelay, withTiming } from 'react-native-reanimated'
 
 const Splash = ({ navigation }) => {
-    setTimeout(() => {
-        // navigation.navigate('Login')
-    }, 2500);
+    const translateX = useSharedValue(0)
+
+    useEffect(() => {
+        translateX.value = withDelay(1800, withTiming(400, { duration: 1000 })); // Đổi delay và duration
+
+        const timeoutId = setTimeout(() => {
+            navigation.navigate('Login')
+        }, 2500);
+
+        return () => clearTimeout(timeoutId);
+    }, [])
+
+    const animatedStyles = useAnimatedStyle(() => ({
+        transform: [
+            { translateX: translateX.value }
+        ]
+    }))
+
     return (
-        <View style={st.container}>
-            <Text style={st.text}>
-                ... App
-            </Text>
+        <View style={[st.container]}>
+            <Animated.View style={animatedStyles}>
+                <Text style={st.text}>
+                    ... App
+                </Text>
 
-            <Text style={st.text}>
-                Họ tên: Đỗ Quang Giáp
-            </Text>
+                <Text style={st.text}>
+                    Họ tên: Đỗ Quang Giáp
+                </Text>
 
-            <Text style={st.text}>
-                MSSV: PH34273
-            </Text>
+                <Text style={st.text}>
+                    MSSV: PH34273
+                </Text>
 
-            <Text style={st.text}>
-                Class: MD18306
-            </Text>
+                <Text style={st.text}>
+                    Class: MD18306
+                </Text>
 
-            <LottieView
-                source={require('../assets/animations/robot.json')}
-                style={st.robot}
-                autoPlay
-                loop
-            />
+                <LottieView
+                    source={require('../assets/animations/robot.json')}
+                    style={st.robot}
+                    autoPlay
+                    loop
+                />
 
-            <LottieView
-                source={require('../assets/animations/paperplane.json')}
-                style={st.plane}
-                autoPlay
-                loop
-            />
+                <LottieView
+                    source={require('../assets/animations/paperplane.json')}
+                    style={st.plane}
+                    autoPlay
+                    loop
+                />
+            </Animated.View>
         </View>
     )
 }
