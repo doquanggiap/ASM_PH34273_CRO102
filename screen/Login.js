@@ -3,7 +3,7 @@ import React from 'react'
 
 const Login = () => {
     return (
-        <View>
+        <View style={st.container}>
             <Text>Login</Text>
         </View>
     )
@@ -11,4 +11,9 @@ const Login = () => {
 
 export default Login
 
-const styles = StyleSheet.create({})
+const st = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#67d6b0'
+    }
+})

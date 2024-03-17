@@ -2,7 +2,10 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import LottieView from 'lottie-react-native'
 
-const Splash = () => {
+const Splash = ({ navigation }) => {
+    setTimeout(() => {
+        // navigation.navigate('Login')
+    }, 2500);
     return (
         <View style={st.container}>
             <Text style={st.text}>
