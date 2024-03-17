@@ -4,7 +4,7 @@ import TextInput from '../components/TextInputCustom'
 import Button from '../components/ButtonCustom'
 import Animated, { useAnimatedStyle, useSharedValue, withDelay, withTiming } from 'react-native-reanimated'
 
-const Login = ({ navigation }) => {
+const SignUp = () => {
 
     //hiệu ứng khởi đầu màn hình
     const translateX = useSharedValue(-400)
@@ -25,10 +25,11 @@ const Login = ({ navigation }) => {
     const [errMessPass, seterrMessPass] = useState('')
 
 
-    const handleLogin = () => {
+    const handleSignUp = () => {
         if (email.length == 0 && password.length == 0) {
             seterrMessEmail('Bạn chưa nhập email')
             seterrMessPass('Bạn chưa nhập password')
+
             return
         }
         if (email.length == 0) {
@@ -40,15 +41,7 @@ const Login = ({ navigation }) => {
             return
         }
 
-        Alert.alert('Đăng nhập thành công')
-    }
-
-    const handleSignUp = () => {
-        translateX.value = withDelay(0, withTiming(400, { duration: 1000 }))
-
-        setTimeout(() => {
-            navigation.navigate('SignUp')
-        }, 1000);
+        Alert.alert('Đăng ký thành công')
     }
 
     return (
@@ -59,10 +52,10 @@ const Login = ({ navigation }) => {
                 <Text
                     style={{
                         fontSize: 30,
-                        color: 'white',
+                        color: '#67d6b0',
                         fontFamily: 'Sono_Proportional-Bold'
                     }}
-                >ĐĂNG NHẬP</Text>
+                >ĐĂNG KÝ</Text>
 
 
                 {/* Phần nhập thông tin */}
@@ -73,11 +66,11 @@ const Login = ({ navigation }) => {
                 }}>
                     <TextInput
                         title='Email'
-                        titleStyle={{ color: 'white', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
-                        borderColor='white'
+                        titleStyle={{ color: '#67d6b0', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
+                        borderColor='#67d6b0'
                         placeholder='Nhập Email'
-                        placeholderTextColor='white'
-                        style={{ color: 'white', fontFamily: 'Sono_Proportional-SemiBold' }}
+                        placeholderTextColor='#67d6b0'
+                        style={{ color: '#67d6b0', fontFamily: 'Sono_Proportional-SemiBold' }}
                         errorMessage={errMessEmail}
                         onChangeText={(txt) => {
                             setEmail(txt)
@@ -88,11 +81,11 @@ const Login = ({ navigation }) => {
 
                     <TextInput
                         title='Mật Khẩu'
-                        titleStyle={{ color: 'white', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
-                        borderColor='white'
+                        titleStyle={{ color: '#67d6b0', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
+                        borderColor='#67d6b0'
                         placeholder='Nhập mật khẩu'
-                        placeholderTextColor='white'
-                        style={{ color: 'white', fontFamily: 'Sono_Proportional-SemiBold' }}
+                        placeholderTextColor='#67d6b0'
+                        style={{ color: '#67d6b0', fontFamily: 'Sono_Proportional-SemiBold' }}
                         errorMessage={errMessPass}
                         onChangeText={(txt) => {
                             setPassword(txt)
@@ -103,16 +96,16 @@ const Login = ({ navigation }) => {
 
                 {/* Nút đăng nhập */}
                 <Button
-                    title='Đăng nhập'
-                    onPress={handleLogin}
+                    title='Đăng ký'
+                    onPress={handleSignUp}
                     buttonStyle={{
-                        backgroundColor: 'white',
+                        backgroundColor: '#67d6b0',
                         height: 60,
                         marginTop: 20
                     }}
 
                     titleStyle={{
-                        color: '#67d6b0',
+                        color: 'white',
                         fontFamily: 'Sono_Proportional-Bold'
                     }}
                 />
@@ -120,28 +113,12 @@ const Login = ({ navigation }) => {
                 {/* Quên mật khẩu */}
                 <View style={[st.textLine, { marginTop: 20 }]}>
                     <Text style={[st.bottomText, { marginRight: 10 }]}>
-                        Quên mật khẩu?
+                        Bạn đã có tài khoản?
                     </Text>
 
                     <TouchableOpacity>
                         <Text style={st.bottomText}>
-                            Tìm lại
-                        </Text>
-                    </TouchableOpacity>
-
-                </View>
-
-
-                {/* Nút đăng ký */}
-                <View style={st.textLine}>
-                    <Text style={[st.bottomText, { marginRight: 10 }]}>
-                        Bạn chưa có tài khoản?
-                    </Text>
-
-                    <TouchableOpacity onPress={handleSignUp}>
-                        <Text
-                            style={st.bottomText}>
-                            Đăng ký
+                            Đăng nhập
                         </Text>
                     </TouchableOpacity>
 
@@ -154,17 +131,17 @@ const Login = ({ navigation }) => {
     )
 }
 
-export default Login
+export default SignUp
 
 const st = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#67d6b0',
+        backgroundColor: 'white',
         padding: 20
     },
 
     bottomText: {
-        color: 'white',
+        color: '#67d6b0',
         fontSize: 16,
         fontFamily: 'Sono_Proportional-SemiBold'
     },
