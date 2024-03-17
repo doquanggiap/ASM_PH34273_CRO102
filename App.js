@@ -9,21 +9,21 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    // <View style={{
-    //   flex: 1
-    // }}>
-    //   <Splash />
-    //   {/* <Login /> */}
+    <View style={{
+      flex: 1
+    }}>
+      {/* <Splash /> */}
+      <Login />
 
-    // </View>
+    </View>
 
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Splash" component={Splash} />
-        <Stack.Screen name="Login" component={Login} />
+    // <NavigationContainer>
+    //   <Stack.Navigator screenOptions={{ headerShown: false }}>
+    //     <Stack.Screen name="Splash" component={Splash} />
+    //     <Stack.Screen name="Login" component={Login} />
 
-      </Stack.Navigator>
-    </NavigationContainer>
+    //   </Stack.Navigator>
+    // </NavigationContainer>
   )
 }
 
