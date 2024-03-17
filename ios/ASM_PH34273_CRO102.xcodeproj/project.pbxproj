@@ -14,6 +14,23 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ASM_PH34273_CRO102-ASM_PH34273_CRO102Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ASM_PH34273_CRO102-ASM_PH34273_CRO102Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		5060F719CB9845E992A896AA /* Sono-VariableFont_MONO,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B544BF33FBC4FA4A265A289 /* Sono-VariableFont_MONO,wght.ttf */; };
+		17B6D83CBD4D4C8594ECF4A8 /* Sono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91BEB41B018A4375B6A27C8C /* Sono-Bold.ttf */; };
+		BE36797FBFEE49A597008831 /* Sono-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 283F4F39129F42DFA922E1A1 /* Sono-ExtraBold.ttf */; };
+		8D4AE042138A4EA2BF6C9A94 /* Sono-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E134156A3CD4BF08E0A1E7D /* Sono-ExtraLight.ttf */; };
+		01781A5E51F448D9A34FB16E /* Sono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273DE334ACB74EFEB6EF5C42 /* Sono-Light.ttf */; };
+		A63DD097B86546AAB048B5EA /* Sono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF75A603449647AA9DFC6A4A /* Sono-Medium.ttf */; };
+		A8762E32CE024A358EB202CD /* Sono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DFD20FEEBA14E6C96EFC7BA /* Sono-Regular.ttf */; };
+		653FDE14B3BC4283B5291358 /* Sono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8FBE89A540446638D990C52 /* Sono-SemiBold.ttf */; };
+		F8E6D4A40AAC4102B73672EC /* Sono_Proportional-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEDB5397045044FFAC536E8A /* Sono_Proportional-Bold.ttf */; };
+		0346E93251284B81B35F158D /* Sono_Proportional-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE590AB4B7F48AC8C136A9A /* Sono_Proportional-ExtraBold.ttf */; };
+		8E744FA0A6A745BB8C9C0EDF /* Sono_Proportional-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D4306DD7DC747949463CEE1 /* Sono_Proportional-ExtraLight.ttf */; };
+		097C65E0E06047939D727067 /* Sono_Proportional-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD462729B64D3E97264563 /* Sono_Proportional-Light.ttf */; };
+		F304E613A4114CF5B0242812 /* Sono_Proportional-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DAA63B8FB6D4D5B899F672A /* Sono_Proportional-Medium.ttf */; };
+		416B35CF1C0E4F92A50155E1 /* Sono_Proportional-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223D616F2EED4C8285224D6C /* Sono_Proportional-Regular.ttf */; };
+		37FF0EA3D11943D9BD05AFCC /* Sono_Proportional-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5F2C73B9563432AAA0D2931 /* Sono_Proportional-SemiBold.ttf */; };
+		3485C6A67D104B938BB49842 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4B73DC184B043E0934DDE27 /* OFL.txt */; };
+		A6A6C4A9B537449E8B3B5A66 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69265D5D86764E43AE52287F /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +61,23 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ASM_PH34273_CRO102/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ASM_PH34273_CRO102-ASM_PH34273_CRO102Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASM_PH34273_CRO102-ASM_PH34273_CRO102Tests.release.xcconfig"; path = "Target Support Files/Pods-ASM_PH34273_CRO102-ASM_PH34273_CRO102Tests/Pods-ASM_PH34273_CRO102-ASM_PH34273_CRO102Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9B544BF33FBC4FA4A265A289 /* Sono-VariableFont_MONO,wght.ttf */ = {isa = PBXFileReference; name = "Sono-VariableFont_MONO,wght.ttf"; path = "../assets/fonts/Sono/Sono-VariableFont_MONO,wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		91BEB41B018A4375B6A27C8C /* Sono-Bold.ttf */ = {isa = PBXFileReference; name = "Sono-Bold.ttf"; path = "../assets/fonts/Sono/static/Sono-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		283F4F39129F42DFA922E1A1 /* Sono-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Sono-ExtraBold.ttf"; path = "../assets/fonts/Sono/static/Sono-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E134156A3CD4BF08E0A1E7D /* Sono-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Sono-ExtraLight.ttf"; path = "../assets/fonts/Sono/static/Sono-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		273DE334ACB74EFEB6EF5C42 /* Sono-Light.ttf */ = {isa = PBXFileReference; name = "Sono-Light.ttf"; path = "../assets/fonts/Sono/static/Sono-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF75A603449647AA9DFC6A4A /* Sono-Medium.ttf */ = {isa = PBXFileReference; name = "Sono-Medium.ttf"; path = "../assets/fonts/Sono/static/Sono-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1DFD20FEEBA14E6C96EFC7BA /* Sono-Regular.ttf */ = {isa = PBXFileReference; name = "Sono-Regular.ttf"; path = "../assets/fonts/Sono/static/Sono-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C8FBE89A540446638D990C52 /* Sono-SemiBold.ttf */ = {isa = PBXFileReference; name = "Sono-SemiBold.ttf"; path = "../assets/fonts/Sono/static/Sono-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BEDB5397045044FFAC536E8A /* Sono_Proportional-Bold.ttf */ = {isa = PBXFileReference; name = "Sono_Proportional-Bold.ttf"; path = "../assets/fonts/Sono/static/Sono_Proportional-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7BE590AB4B7F48AC8C136A9A /* Sono_Proportional-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Sono_Proportional-ExtraBold.ttf"; path = "../assets/fonts/Sono/static/Sono_Proportional-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D4306DD7DC747949463CEE1 /* Sono_Proportional-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Sono_Proportional-ExtraLight.ttf"; path = "../assets/fonts/Sono/static/Sono_Proportional-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FBD462729B64D3E97264563 /* Sono_Proportional-Light.ttf */ = {isa = PBXFileReference; name = "Sono_Proportional-Light.ttf"; path = "../assets/fonts/Sono/static/Sono_Proportional-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2DAA63B8FB6D4D5B899F672A /* Sono_Proportional-Medium.ttf */ = {isa = PBXFileReference; name = "Sono_Proportional-Medium.ttf"; path = "../assets/fonts/Sono/static/Sono_Proportional-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		223D616F2EED4C8285224D6C /* Sono_Proportional-Regular.ttf */ = {isa = PBXFileReference; name = "Sono_Proportional-Regular.ttf"; path = "../assets/fonts/Sono/static/Sono_Proportional-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5F2C73B9563432AAA0D2931 /* Sono_Proportional-SemiBold.ttf */ = {isa = PBXFileReference; name = "Sono_Proportional-SemiBold.ttf"; path = "../assets/fonts/Sono/static/Sono_Proportional-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E4B73DC184B043E0934DDE27 /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../assets/fonts/Sono/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		69265D5D86764E43AE52287F /* README.txt */ = {isa = PBXFileReference; name = "README.txt"; path = "../assets/fonts/Sono/README.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +156,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				0E273D99E50A4EE3BBF70289 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +182,31 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		0E273D99E50A4EE3BBF70289 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9B544BF33FBC4FA4A265A289 /* Sono-VariableFont_MONO,wght.ttf */,
+				91BEB41B018A4375B6A27C8C /* Sono-Bold.ttf */,
+				283F4F39129F42DFA922E1A1 /* Sono-ExtraBold.ttf */,
+				4E134156A3CD4BF08E0A1E7D /* Sono-ExtraLight.ttf */,
+				273DE334ACB74EFEB6EF5C42 /* Sono-Light.ttf */,
+				FF75A603449647AA9DFC6A4A /* Sono-Medium.ttf */,
+				1DFD20FEEBA14E6C96EFC7BA /* Sono-Regular.ttf */,
+				C8FBE89A540446638D990C52 /* Sono-SemiBold.ttf */,
+				BEDB5397045044FFAC536E8A /* Sono_Proportional-Bold.ttf */,
+				7BE590AB4B7F48AC8C136A9A /* Sono_Proportional-ExtraBold.ttf */,
+				0D4306DD7DC747949463CEE1 /* Sono_Proportional-ExtraLight.ttf */,
+				8FBD462729B64D3E97264563 /* Sono_Proportional-Light.ttf */,
+				2DAA63B8FB6D4D5B899F672A /* Sono_Proportional-Medium.ttf */,
+				223D616F2EED4C8285224D6C /* Sono_Proportional-Regular.ttf */,
+				F5F2C73B9563432AAA0D2931 /* Sono_Proportional-SemiBold.ttf */,
+				E4B73DC184B043E0934DDE27 /* OFL.txt */,
+				69265D5D86764E43AE52287F /* README.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +303,23 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5060F719CB9845E992A896AA /* Sono-VariableFont_MONO,wght.ttf in Resources */,
+				17B6D83CBD4D4C8594ECF4A8 /* Sono-Bold.ttf in Resources */,
+				BE36797FBFEE49A597008831 /* Sono-ExtraBold.ttf in Resources */,
+				8D4AE042138A4EA2BF6C9A94 /* Sono-ExtraLight.ttf in Resources */,
+				01781A5E51F448D9A34FB16E /* Sono-Light.ttf in Resources */,
+				A63DD097B86546AAB048B5EA /* Sono-Medium.ttf in Resources */,
+				A8762E32CE024A358EB202CD /* Sono-Regular.ttf in Resources */,
+				653FDE14B3BC4283B5291358 /* Sono-SemiBold.ttf in Resources */,
+				F8E6D4A40AAC4102B73672EC /* Sono_Proportional-Bold.ttf in Resources */,
+				0346E93251284B81B35F158D /* Sono_Proportional-ExtraBold.ttf in Resources */,
+				8E744FA0A6A745BB8C9C0EDF /* Sono_Proportional-ExtraLight.ttf in Resources */,
+				097C65E0E06047939D727067 /* Sono_Proportional-Light.ttf in Resources */,
+				F304E613A4114CF5B0242812 /* Sono_Proportional-Medium.ttf in Resources */,
+				416B35CF1C0E4F92A50155E1 /* Sono_Proportional-Regular.ttf in Resources */,
+				37FF0EA3D11943D9BD05AFCC /* Sono_Proportional-SemiBold.ttf in Resources */,
+				3485C6A67D104B938BB49842 /* OFL.txt in Resources */,
+				A6A6C4A9B537449E8B3B5A66 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
