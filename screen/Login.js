@@ -1,4 +1,4 @@
-import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Alert, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import TextInput from '../components/TextInputCustom'
 import Button from '../components/ButtonCustom'
@@ -47,106 +47,117 @@ const Login = ({ navigation }) => {
         translateX.value = withDelay(0, withTiming(400, { duration: 1000 }))
 
         setTimeout(() => {
+            translateX.value = withDelay(0, withTiming(0, { duration: 1000 }))
+        }, 1000);
+
+        setTimeout(() => {
             navigation.navigate('SignUp')
         }, 1000);
     }
 
     return (
         <View style={st.container}>
-            <Animated.View style={animatedStyles}>
+            <SafeAreaView>
+                <View style={{ marginTop: 30 }}>
+                    <Animated.View style={[animatedStyles]}>
 
-                {/* Tiêu đề màn hình đăng nhập */}
-                <Text
-                    style={{
-                        fontSize: 30,
-                        color: 'white',
-                        fontFamily: 'Sono_Proportional-Bold'
-                    }}
-                >ĐĂNG NHẬP</Text>
-
-
-                {/* Phần nhập thông tin */}
-                <View style={{
-                    marginTop: 20,
-                    height: 200,
-                    justifyContent: 'space-evenly'
-                }}>
-                    <TextInput
-                        title='Email'
-                        titleStyle={{ color: 'white', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
-                        borderColor='white'
-                        placeholder='Nhập Email'
-                        placeholderTextColor='white'
-                        style={{ color: 'white', fontFamily: 'Sono_Proportional-SemiBold' }}
-                        errorMessage={errMessEmail}
-                        onChangeText={(txt) => {
-                            setEmail(txt)
-                            seterrMessEmail('')
-                        }}
-
-                    />
-
-                    <TextInput
-                        title='Mật Khẩu'
-                        titleStyle={{ color: 'white', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
-                        borderColor='white'
-                        placeholder='Nhập mật khẩu'
-                        placeholderTextColor='white'
-                        style={{ color: 'white', fontFamily: 'Sono_Proportional-SemiBold' }}
-                        errorMessage={errMessPass}
-                        onChangeText={(txt) => {
-                            setPassword(txt)
-                            seterrMessPass('')
-                        }}
-                    />
-                </View>
-
-                {/* Nút đăng nhập */}
-                <Button
-                    title='Đăng nhập'
-                    onPress={handleLogin}
-                    buttonStyle={{
-                        backgroundColor: 'white',
-                        height: 60,
-                        marginTop: 20
-                    }}
-
-                    titleStyle={{
-                        color: '#67d6b0',
-                        fontFamily: 'Sono_Proportional-Bold'
-                    }}
-                />
-
-                {/* Quên mật khẩu */}
-                <View style={[st.textLine, { marginTop: 20 }]}>
-                    <Text style={[st.bottomText, { marginRight: 10 }]}>
-                        Quên mật khẩu?
-                    </Text>
-
-                    <TouchableOpacity>
-                        <Text style={st.bottomText}>
-                            Tìm lại
-                        </Text>
-                    </TouchableOpacity>
-
-                </View>
-
-
-                {/* Nút đăng ký */}
-                <View style={st.textLine}>
-                    <Text style={[st.bottomText, { marginRight: 10 }]}>
-                        Bạn chưa có tài khoản?
-                    </Text>
-
-                    <TouchableOpacity onPress={handleSignUp}>
+                        {/* Tiêu đề màn hình đăng nhập */}
                         <Text
-                            style={st.bottomText}>
-                            Đăng ký
-                        </Text>
-                    </TouchableOpacity>
+                            style={{
+                                fontSize: 30,
+                                color: 'white',
+                                fontFamily: 'Sono_Proportional-Bold'
+                            }}
+                        >ĐĂNG NHẬP</Text>
 
+
+                        {/* Phần nhập thông tin */}
+                        <View style={{
+                            marginTop: 20,
+                            height: 200,
+                            justifyContent: 'space-evenly'
+                        }}>
+                            <TextInput
+                                title='Email'
+                                titleStyle={{ color: 'white', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
+                                borderColor='white'
+                                placeholder='Nhập Email'
+                                placeholderTextColor='white'
+                                style={{ color: 'white', fontFamily: 'Sono_Proportional-SemiBold' }}
+                                errorMessage={errMessEmail}
+                                onChangeText={(txt) => {
+                                    setEmail(txt)
+                                    seterrMessEmail('')
+                                }}
+
+                            />
+
+                            <TextInput
+                                title='Mật Khẩu'
+                                titleStyle={{ color: 'white', fontSize: 18, fontFamily: 'Sono_Proportional-SemiBold' }}
+                                borderColor='white'
+                                placeholder='Nhập mật khẩu'
+                                placeholderTextColor='white'
+                                style={{ color: 'white', fontFamily: 'Sono_Proportional-SemiBold' }}
+                                errorMessage={errMessPass}
+                                onChangeText={(txt) => {
+                                    setPassword(txt)
+                                    seterrMessPass('')
+                                }}
+                            />
+                        </View>
+
+                        {/* Nút đăng nhập */}
+                        <Button
+                            title='Đăng nhập'
+                            onPress={handleLogin}
+                            buttonStyle={{
+                                backgroundColor: 'white',
+                                height: 60,
+                                marginTop: 20
+                            }}
+
+                            titleStyle={{
+                                color: '#67d6b0',
+                                fontFamily: 'Sono_Proportional-Bold'
+                            }}
+                        />
+
+                        {/* Quên mật khẩu */}
+                        <View style={[st.textLine, { marginTop: 20 }]}>
+                            <Text style={[st.bottomText, { marginRight: 10 }]}>
+                                Quên mật khẩu?
+                            </Text>
+
+                            <TouchableOpacity>
+                                <Text style={st.bottomText}>
+                                    Tìm lại
+                                </Text>
+                            </TouchableOpacity>
+
+                        </View>
+
+
+                        {/* Nút đăng ký */}
+                        <View style={st.textLine}>
+                            <Text style={[st.bottomText, { marginRight: 10 }]}>
+                                Bạn chưa có tài khoản?
+                            </Text>
+
+                            <TouchableOpacity onPress={handleSignUp}>
+                                <Text
+                                    style={st.bottomText}>
+                                    Đăng ký
+                                </Text>
+                            </TouchableOpacity>
+
+                        </View>
+                    </Animated.View>
                 </View>
-            </Animated.View>
+
+            </SafeAreaView>
+
+
 
 
 

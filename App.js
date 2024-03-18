@@ -5,30 +5,31 @@ import Login from './screen/Login'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignUp from './screen/SignUp'
+import Home from './screen/Home'
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    // <View style={{
-    //   flex: 1
-    // }}>
-    //   {/* <Splash /> */}
-    //   <Login />
-    //   {/* <SignUp /> */}
+    <View style={{
+      flex: 1
+    }}>
+      {/* <Splash /> */}
+      {/* <Login /> */}
+      {/* <SignUp /> */}
+      <Home />
+
+    </View>
+
+    // <NavigationContainer>
+    //   <Stack.Navigator screenOptions={{ headerShown: false }}>
+    //     <Stack.Screen name="Splash" component={Splash} />
+    //     <Stack.Screen name="Login" component={Login} />
+    //     <Stack.Screen name="SignUp" component={SignUp} />
 
 
-    // </View>
-
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Splash" component={Splash} />
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-
-
-      </Stack.Navigator>
-    </NavigationContainer>
+    //   </Stack.Navigator>
+    // </NavigationContainer>
   )
 }
 

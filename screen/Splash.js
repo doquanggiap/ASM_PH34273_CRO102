@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StatusBar, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
 import LottieView from 'lottie-react-native'
 import Animated, { useAnimatedStyle, useSharedValue, withDelay, withTiming } from 'react-native-reanimated'
@@ -24,6 +24,11 @@ const Splash = ({ navigation }) => {
 
     return (
         <View style={[st.container]}>
+            <StatusBar
+                barStyle={'light-content'}
+                translucent
+                backgroundColor={'transparent'}
+            />
             <Animated.View style={animatedStyles}>
                 <Text style={st.text}>
                     ... App
