@@ -1,23 +1,26 @@
 import { FlatList, Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Feather from 'react-native-vector-icons/Feather'
+import AntDesign from 'react-native-vector-icons/AntDesign'
 import { COLOR } from '../assets/color'
 import Banner from '../components/Banner'
 import { Item } from '../assets/database'
 
-const Home = () => {
+const Home = ({ navigation }) => {
 
     const renderItem = ({ item }) => {
         return (
-            <TouchableOpacity style={{
-                backgroundColor: '#F0F0F3',
-                width: 200,
-                height: 200,
-                marginRight: 10,
-                justifyContent: 'center',
-                alignItems: 'center',
-                borderRadius: 20,
-            }}>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('ProductInfo', item)}
+                style={{
+                    backgroundColor: '#F0F0F3',
+                    width: 200,
+                    height: 200,
+                    marginRight: 10,
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    borderRadius: 20,
+                }}>
                 <Image
                     source={{ uri: item.image }}
                     width={130}
@@ -37,13 +40,15 @@ const Home = () => {
             }}>
             <StatusBar
                 barStyle='dark-content'
+                translucent
                 backgroundColor={'transparent'}
             />
             <View style={{
                 width: '100%',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
-                padding: 16
+                padding: 16,
+                marginTop: 20
             }}>
 
                 {/* Các nút trên đầu ứng dụng */}
@@ -55,13 +60,30 @@ const Home = () => {
                     />
                 </TouchableOpacity>
 
-                <TouchableOpacity>
-                    <Feather
-                        name='shopping-cart'
-                        size={25}
-                        color={COLOR.xanhLa}
-                    />
-                </TouchableOpacity>
+                <View style={{
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    width: 80
+                }}>
+                    <TouchableOpacity>
+                        <AntDesign
+                            name='heart'
+                            size={25}
+                            color={COLOR.xanhLa}
+                        />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity>
+                        <Feather
+                            name='shopping-cart'
+                            size={25}
+                            color={COLOR.xanhLa}
+                        />
+                    </TouchableOpacity>
+                </View>
+
+
 
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>

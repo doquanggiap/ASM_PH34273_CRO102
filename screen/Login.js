@@ -40,7 +40,7 @@ const Login = ({ navigation }) => {
             return
         }
 
-        Alert.alert('Đăng nhập thành công')
+        navigation.navigate('Home')
     }
 
     const handleSignUp = () => {
