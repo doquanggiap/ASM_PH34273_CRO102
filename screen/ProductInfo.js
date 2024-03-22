@@ -142,12 +142,7 @@ const ProductInfo = ({ route, navigation }) => {
                             </TouchableOpacity>
                         </View>
 
-
-
-
-
                     </View>
-
 
                     <Text style={{
                         fontSize: 25,
