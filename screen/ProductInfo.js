@@ -22,6 +22,8 @@ const ProductInfo = ({ route, navigation }) => {
 
     const [isKeyboardVisible, setKeyboardVisible] = useState(false);
 
+
+    // sự kiện bàn phím bật lên
     useEffect(() => {
         const keyboardDidShowListener = Keyboard.addListener(
             'keyboardDidShow',
@@ -36,7 +38,6 @@ const ProductInfo = ({ route, navigation }) => {
             }
         );
 
-        // Xóa sự kiện khi component unmount
         return () => {
             keyboardDidShowListener.remove();
             keyboardDidHideListener.remove();
@@ -133,7 +134,10 @@ const ProductInfo = ({ route, navigation }) => {
                                 />
                             </TouchableOpacity>
 
-                            <TouchableOpacity onPress={() => setisLike(!isLike)}>
+                            <TouchableOpacity onPress={() => {
+                                setisLike(!isLike)
+                                navigation.navigate('Cart')
+                            }}>
                                 <FontAwesome5
                                     name='cart-plus'
                                     size={30}
@@ -228,6 +232,7 @@ const ProductInfo = ({ route, navigation }) => {
             {!isKeyboardVisible && (
 
                 <ButtonCustom
+                    onPress={() => navigation.navigate('Cart')}
                     buttonStyle={{
                         backgroundColor: COLOR.xanhLa,
                         width: 380,
@@ -240,7 +245,7 @@ const ProductInfo = ({ route, navigation }) => {
                         alignItems: 'center',
                     }}
 
-                    title='Mua ngay'
+                    title='Thêm vào giỏ hàng'
                     titleStyle={{
                         color: '#ffffff',
                         fontSize: 20,

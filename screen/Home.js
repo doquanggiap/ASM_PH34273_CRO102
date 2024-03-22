@@ -74,7 +74,8 @@ const Home = ({ navigation }) => {
                         />
                     </TouchableOpacity>
 
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('Cart')}>
                         <Feather
                             name='shopping-cart'
                             size={25}
