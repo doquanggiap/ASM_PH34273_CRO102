@@ -1,4 +1,4 @@
-import { Image, ScrollView, StatusBar, StyleSheet, Text, ToastAndroid, TouchableOpacity, View } from 'react-native'
+import { Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
 import Ionicons from 'react-native-vector-icons/Ionicons'

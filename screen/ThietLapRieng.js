@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StatusBar, TouchableOpacity, FlatList } from 'react-native';
+import { View, Text, StatusBar, TouchableOpacity, FlatList, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Entypo from 'react-native-vector-icons/Entypo'
 import Feather from 'react-native-vector-icons/Feather'
@@ -7,7 +7,7 @@ import Feather from 'react-native-vector-icons/Feather'
 
 const ThietLapRieng = ({ navigation }) => {
     const data = [
-        { id: 1, title: 'Thay đổi màu nền', onPress: () => navigation.navigate('PersonalInformation') },
+        { id: 1, title: 'Thay đổi màu nền', onPress: () => Alert.alert('Thay đổi màu nền') },
         { id: 2, title: 'Đổi mật khẩu', onPress: () => navigation.navigate('DoiMatKhau') },
 
     ]

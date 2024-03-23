@@ -7,10 +7,10 @@ import Entypo from 'react-native-vector-icons/Entypo'
 
 const PhoneInfo = ({ navigation }) => {
     const phoneInfo = {
-        name: 'Đỗ Quang Giáp',
-        cpu: 'PH34273',
-        ram: 'MD18306',
-        storage: 'MD18306',
+        name: 'Samsung A11',
+        cpu: 'Snap Dragon 450',
+        ram: '8GB',
+        storage: '32gb',
 
     };
     return (

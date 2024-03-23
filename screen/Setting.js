@@ -1,10 +1,7 @@
-import { Alert, FlatList, Image, ScrollView, StatusBar, StyleSheet, Text, ToastAndroid, TouchableOpacity, View } from 'react-native'
+import { FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Entypo from 'react-native-vector-icons/Entypo'
-import Ionicons from 'react-native-vector-icons/Ionicons'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import ButtonCustom from '../components/ButtonCustom'
-import { COLOR } from '../assets/color'
 
 
 const Setting = ({ navigation }) => {

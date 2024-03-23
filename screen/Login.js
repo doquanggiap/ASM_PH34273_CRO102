@@ -1,4 +1,4 @@
-import { Alert, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import TextInput from '../components/TextInputCustom'
 import Button from '../components/ButtonCustom'
