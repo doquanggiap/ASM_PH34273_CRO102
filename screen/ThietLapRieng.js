@@ -1,18 +1,14 @@
-import { Alert, FlatList, Image, ScrollView, StatusBar, StyleSheet, Text, ToastAndroid, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { View, Text, StatusBar, TouchableOpacity, FlatList } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Entypo from 'react-native-vector-icons/Entypo'
-import Ionicons from 'react-native-vector-icons/Ionicons'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import ButtonCustom from '../components/ButtonCustom'
-import { COLOR } from '../assets/color'
+import Feather from 'react-native-vector-icons/Feather'
 
 
-const Setting = ({ navigation }) => {
+const ThietLapRieng = ({ navigation }) => {
     const data = [
-        { id: 1, title: 'Thông tin cá nhân', onPress: () => navigation.navigate('PersonalInformation') },
-        { id: 2, title: 'Thông tin điện thoại', onPress: () => navigation.navigate('PhoneInfo') },
-        { id: 3, title: 'Thiết lập riêng', onPress: () => navigation.navigate('ThietLapRieng') },
-        { id: 4, title: 'Đăng xuất', onPress: () => navigation.navigate('Login') },
+        { id: 1, title: 'Thay đổi màu nền', onPress: () => navigation.navigate('PersonalInformation') },
+        { id: 2, title: 'Đổi mật khẩu', onPress: () => navigation.navigate('DoiMatKhau') },
 
     ]
 
@@ -23,20 +19,27 @@ const Setting = ({ navigation }) => {
                     backgroundColor: '#F0F0F3',
                     width: '100%',
                     height: 70,
-                    justifyContent: 'center',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
                     borderRadius: 20,
                     marginBottom: 10,
-                    paddingHorizontal: 10
+                    paddingHorizontal: 10,
+                    flexDirection: 'row'
                 }}
                 onPress={item.onPress}>
                 <Text
                     style={{
                         fontSize: 20,
                         fontFamily: 'Sono_Proportional-SemiBold',
-                        color: item.title === 'Đăng xuất' ? 'red' : '#777777'
+                        color: '#777777'
                     }}
 
                 >{item.title}</Text>
+
+                {/* icon sáng tối */}
+                {item.title == 'Thay đổi màu nền' &&
+                    <Feather name='moon' size={30} color='#777777' />}
+
             </TouchableOpacity>
         )
     }
@@ -61,7 +64,7 @@ const Setting = ({ navigation }) => {
                     width: '100%',
                 }}>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('Setting')}
                         style={{
                             position: 'relative',
                             left: 20,
@@ -78,13 +81,14 @@ const Setting = ({ navigation }) => {
 
                     <Text style={{
                         position: 'relative',
-                        left: 110,
+                        left: 60,
                         fontSize: 25,
                         fontFamily: 'Sono_Proportional-ExtraBold',
                     }}>
-                        Cài đặt
+                        Thiết lập riêng
                     </Text>
                 </View>
+
                 <FlatList
                     data={data}
                     keyExtractor={item => item.id}
@@ -97,8 +101,6 @@ const Setting = ({ navigation }) => {
 
         </View>
     )
-}
+};
 
-export default Setting
-
-const styles = StyleSheet.create({})
+export default ThietLapRieng;

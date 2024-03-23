@@ -52,7 +52,7 @@ const Home = ({ navigation }) => {
             }}>
 
                 {/* Các nút trên đầu ứng dụng */}
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Setting')}>
                     <Feather
                         name='settings'
                         size={25}
@@ -151,7 +151,7 @@ const Home = ({ navigation }) => {
                                 fontSize: 18,
                                 color: COLOR.xanhLa,
                                 fontFamily: 'Sono_Proportional-SemiBold'
-                            }}>Sản phẩm mới</Text>
+                            }}>Sản phẩm đã xem</Text>
 
                             <FlatList
                                 data={Item}
